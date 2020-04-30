@@ -19,7 +19,7 @@ Now I normalized this sparse marix by using numpy function linealg and out of 32
 
 So I decided to make this text attribute categorial with 8 categories.
 Now that I have all my attributes I just have to find the best model to fit the data. For this I chose
-GradientBoostingRegressor((sklearn.ensemble) with the following hyperparameters:
+GradientBoostingRegressor(sklearn.ensemble) with the following hyperparameters:
 
 
 (alpha=0.9, ccp_alpha=0.0, criterion='friedman_mse',
