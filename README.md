@@ -15,9 +15,13 @@ Now I normalized this sparse marix by using numpy function linealg and out of 32
  1.0000000000000004,
  0.9999999999999996,
  0.9999999999999994]
+
+
 So I decided to make this text attribute categorial with 8 categories.
 Now that I have all my attributes I just have to find the best model to fit the data. For this I chose
 GradientBoostingRegressor((sklearn.ensemble) with the following hyperparameters:
+
+
 (alpha=0.9, ccp_alpha=0.0, criterion='friedman_mse',
                           init=None, learning_rate=0.1, loss='ls', max_depth=8,
                           max_features=None, max_leaf_nodes=None,
@@ -27,12 +31,18 @@ GradientBoostingRegressor((sklearn.ensemble) with the following hyperparameters:
                           n_iter_no_change=None, presort='deprecated',
                           random_state=None, subsample=1.0, tol=0.0001,
                           validation_fraction=0.1, verbose=0, warm_start=False)
+
+
 'effectiveness_rating','number_of_times_prescribed' and 'new_column'(new categorial attribute extracted from the text) have repective feature_importances: [4.90134688e-01, 5.09691269e-01, 1.74043035e-04]
+
 
 r2_score on the training data: 0.999999960616965
 
+
 Contest Score: 94.56311
 
+
 no of submissions: 22
+
 
 Contest Rank: 21
